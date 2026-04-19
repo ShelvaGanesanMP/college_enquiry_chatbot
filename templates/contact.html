@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="static/styleg.css">
+        <link rel="stylesheet" href="static/navb.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>P.A.S INTERNATIONAL COLLEGE</h1>
+            <div>
+              <a href="{{ url_for('index') }}">Home</a>
+              <a href="{{ url_for('about') }}">About</a>
+              <a href="{{ url_for('library') }}">Library</a>
+            </div>
+          </div>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>contact</h1></u>
+                <form action="{{ url_for('contact') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="name" name="name" type="text" placeholder="Your Name" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="email" name="email" type="text" placeholder="Email Address" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="phonenumber" name="phonenumber" type="number" placeholder="Phone Number" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                           <i class="fa-solid fa-user"></i>
+                           <input id="message" name="message" type="text" placeholder="Massage" class="textbox"/>
+                       </div>
+                    </div>
+                    <div class="btnf">
+                       <br><br><button type="submit" class="btn">SEND</button></br></br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

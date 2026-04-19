@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>blood</title>
+        <link rel="stylesheet" href="static/styleg.css">
+        <link rel="stylesheet" href="{{ url_for('static',filename='navb.css')}}" />
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="navbar">
+                <h1>P.A.S INTERNATIONAL COLLEGE</h1>
+                <div>
+                  <a href="{{ url_for('index') }}">Home</a>
+                  <a href="{{ url_for('about') }}">About</a>
+                  <a href="{{ url_for('library') }}">Library</a>
+                </div>
+              </div>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>BLOOD BANK REGISTER</h1></u>
+                <form action="{{ url_for('bl') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="name" name="name" type="text" placeholder="Enter Your name" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="age" name="age" type="text" placeholder="Enter Your age" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="bloodgroup" name="bloodgroup" type="text" placeholder="Enter Your bloodgroup" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="place" name="place" type="text" placeholder="Enter Your Place" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="phonenumber" name="phonenumber" type="number" placeholder="Enter Your Phonenumber" class="textbox"/>
+                        </div>         
+                    </div>
+                    <div class="btnf">
+                       <br><br> <br><br><button type="submit" class="btn">REGISTER</button></br></br></br></br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

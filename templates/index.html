@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Perfect - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css')}}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='pogo-slider.min.css')}}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='responsive.css')}}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='custom.css')}}" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+        <div class="loader">
+            <img src="{{ url_for('static',filename='images/images/loader.gif')}}" alt="#" />
+        </div>
+    </div> -->
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="{{ url_for('static',filename='images/images/paslogo.jpg')}}" alt="image"></a>
+                <font size="10"><b>P.A.S INTERNATIONAL COLLLEGE</b></font>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="{{ url_for('index') }}">Home</a></li>
+                        <li><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                        <li><a class="nav-link" href="{{ url_for('library') }}">Library</li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    
+                        
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="ulockd-home-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pogoSlider" id="js-main-slider">
+                  <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                        <div class="container" style="background-image:url(images/banner_img.png);">
+                            <div class="row" style="background-image:url(images/banner_img.png);">
+                                <div class="col-md-12" style="background-image:url(static/mayank1/pas17.jpg);">
+                                    <div class="slide_text">
+                                        <h3><span span class=>P.A.S INTERNATIONAL COLLEGE OF SCIENCE AND TECHNOLOGY</span><br></h3>
+                                        <h4><b>APPROVED BY AICSTE NEW DELHI & IOSSR NEW DELHI</b></h4>
+                                        <br>
+                                        <div class="full center">
+										    <a class="contact_bt" href="{{ url_for('courses') }}">Start a Course</a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                        <div class="container" style="background-image:url(images/banner_img.png);">
+                            <div class="row" style="background-image:url(images/banner_img.png);">
+                                <div class="col-md-12" style="background-image:url(static/mayank1/pas25.jpg);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3><span span class=>You only have know one thing</span><br>you can learn anything</h3>
+                                        <h4>Free Educations</h4>
+                                        <br>
+                                        <div class="full center">
+										    <a class="contact_bt" href="{{ url_for('courses') }}">Start a Course</a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </div></div>
+                <!-- .pogoSlider -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- section -->
+	<div class="section tabbar_menu">
+	   <div class="container">
+	      <div class="row">
+		      <div class="col-md-12">
+			     <div class="tab_menu">
+                    <center>
+				    <ul>
+					   <li><a href="{{ url_for('campus') }}"><span class="icon"><img src="{{ url_for('static',filename='images/images/i1.png')}}" alt="" /></span><span>campus</span></a></li>
+					   <li><a href="{{ url_for('base') }}"><span class="icon"><img src="{{ url_for('static',filename='bot.png')}}" alt="#" /></span><span>ChatBot</span></a></li>
+                       <li><a href="{{url_for('ai')}}"><span class="icon"><img src="{{ url_for('static',filename='images/images/q12.png')}}" alt="#" /></span><span>ai</span></a></li>
+                       <li><a href="{{ url_for('courses') }}"><span class="icon"><img src="{{ url_for('static',filename='images/images/i11.png')}}" alt="" /></span><span>courses</span></a></li>
+					   <li><a href="https://ndl.iitkgp.ac.in/"><span class="icon"><img src="{{ url_for('static',filename='images/images/y1.png')}}" alt="#" /></span><span>online library</span></a></li>
+					   <!-- <li><a href="#"><span class="icon"><img src="{{ url_for('static',filename='images/images/i4.png')}}" alt="#" /></span><span>Social</span></a></li> -->
+					   <li><a href="{{url_for('admission')}}"><span class="icon"><img src="{{ url_for('static',filename='images/images/y2.png')}}" alt="#" /></span><span>admission</span></a></li>
+                       <li><a href="https://www.coursera.org/?utm_source=gg&utm_medium=sem&utm_campaign=B2C_INDIA__branded_FTCOF__arte&utm_content=B2C&campaignid=18216928764&adgroupid=141296026032&device=c&keyword=online%20education&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=619458216893&hide_mobile_promo&gclid=Cj0KCQiA9YugBhCZARIsAACXxeJkYBegK1uAzjnIEacfUWxNUEc2-frLdyRWkaoVwNLq65ojPowl-voaAoROEALw_wcB"><span class="icon"><img src="{{ url_for('static',filename='images/images/i5.png')}}" alt="#" /></span><span>free course</span></a></li>
+                    </ul>
+                    </center>
+				 </div>
+			  </div>
+		  </div>
+	   </div>
+	</div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section margin-top_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Welcome To</span> P.A.S International</h2>
+                        </div>
+						<div class="full">
+						  <p>P.A.S International,College of Science and Technology (PASCST) was established in the year 1950-2024. Initially, it started functioning with Computer Science, Bio Sciences(Physics,Chemistry,Zoology,Botany), Information Science and Para Science branches, offering 3 years duration Undergraduate Degree Programme.A two years duration Masters Programme in Computer Science,Physics,Chemistry,Zoology & Botany where added in the year 2001-2024. where a 3 years duration degree programme in Science was introduced in the year 1950-1951. All the programmes are affiliated to University Of Oxford USA, recognised by International Organisation for Study of Sciences and Research & All India Council for Technical Education, New Delhi.</p>
+						</div>
+						<div class="full">
+						   <a class="hvr-radial-out button-theme" href="{{ url_for('admission') }}">Admission</a>
+						</div>
+                    </div>
+                </div>
+				<div class="col-md-6">
+                    <div class="full">
+                        <img src="{{ url_for('static',filename='images/images/img2.png')}}" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>Placement </span>Drive</h2>
+                        </div>
+					  </div>
+                </div>
+				<div class="col-md-4">
+                    <a href="https://career.infosys.com/"><div class="full blog_img_popular">
+                       <img class="img-responsive" src="{{ url_for('static',filename='images/images/p1.png')}}" alt="#" /> 
+					   <h4>INFOSYS</h4>
+                    </div></a>
+                </div>
+				<a href="https://www.tcs.com/careers"><div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="{{ url_for('static',filename='images/images/p2.png')}}" alt="#" />
+						<h4>TCS</h4>
+                    </div></a>
+                </div>
+				<a href="https://careers.wipro.com/careers-home/"><div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="{{ url_for('static',filename='images/images/p3.png')}}" alt="#" />
+						<h4>WIPRO</h4>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section margin-top_50 silver_bg">
+        <div class="container">
+            <div class="row">
+			    <div class="col-md-6">
+                    <div class="full float-right_img">
+                        <img src="{{ url_for('static',filename='images/images/img6.png')}}" alt="#" />
+                    </div>
+                </div>
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Apply for Admission</h2>
+                        </div>
+						<div class="full">
+						  <p> P.A.S International,College of Science and Technology (PASCST) starts the admission for the approved intake for the courses as follows; Computer Science & Technology: 60; Bsc Physics:60; Bsc Chemistry:60; Bsc Zoology:60; Bsc Botany:60; Msc Physics:40; Msc Chemistry:40; Msc Zoology:40; Msc Botany:40 with a total approved intake of 460 students per annum.</p>
+						<div class="full">
+						   <a class="hvr-radial-out button-theme" href="{{ url_for('admission') }}">Apply</a>
+						</div>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Research</span></h2>
+                        </div>
+						<div class=" onfull">
+                            <br><br><br>
+						  <p>  
+                             Research programmes are been organised based on the Oxford University ranked number 1 at the heart of success in research and innovation.The course curriculum of these programmes are as per the norms and guidelines of the affiliating University viz.University of Oxford ,USA and all the relevant details about these programmes are available at www.universityofoxford.ac.in. ,Approved by AICSTE New Delhi & IOSSR New Delhi. </p>
+						</div>
+						<div class="full">
+						   <a class="hvr-radial-out button-theme" href="{{ url_for('research')}}">See More</a>
+						</div>
+                    </div>
+                </div>
+				<div class="col-md-6">
+                    <div class="full">
+                        <img class="img-responsive" src="{{ url_for('static',filename='images/images/img7.png')}}" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>News</span></h2>
+                        </div>
+					  </div>
+                </div>
+			  </div>
+               <div class="row">
+                <div class="col-lg-12">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+									   <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{{ url_for('static',filename='images/images/img9.png')}}" alt="#" />
+										  <h4><a href="https://empowering-people-network.siemens-stiftung.org/solutions/?mtm_campaign=Generics_India&mtm_kwd=recent%20technologies&mtm_source=google&mtm_medium=cpc&gclid=CjwKCAiAxvGfBhB-EiwAMPakqma_VBQbUINVcBYjpO7r7XWbrCsJZfQZzbF_2TzoVAN6jctOA_UlZxoC874QAvD_BwE">Technology</a></h4>
+										  <p>Latest Technology News</p>
+										</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{{ url_for('static',filename='images/images/img8.png')}}" alt="#" />
+										  <h4><a href="https://timesofindia.indiatimes.com/education">Education</a></h4>
+										  <p>Latest Education News</p>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+									   <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{{ url_for('static',filename='images/images/img13.jpg')}}" alt="#" />
+										  <h4><a href="https://sports.ndtv.com/">Sports</a></h4>
+										  <p>Latest Sports News</p>
+										</div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="full blog_img_popular">
+                                          <img class="img-responsive" src="{{ url_for('static',filename='images/images/img12.jpg')}}" alt="#" />
+										  <h4><a href="https://www.healthline.com/health-news">Health</a></h4>
+										  <p>Latest Health News</p>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>			  
+           </div>
+        </div>
+	<!-- end section -->
+	<!-- section -->
+   
+	<!-- end section -->
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+		
+		   <div class="row">
+		   
+		      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			     <div class="footer_blog">
+				    <div class="full margin-bottom_30">
+					   <img src="{{ url_for('static',filename='images/images/paslogo.jpg')}}" alt="#" />
+					 </div>
+					 <div class="full white_fonts">
+					    
+					 </div>
+				 </div>
+			  </div>
+			  
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+			       <div class="footer_blog footer_menu white_fonts">
+						    <h3>Quick links</h3>
+						    <ul> 
+							  <li><a href="https://www.ugc.ac.in/UGC_Regulations.aspx">> UGC Regulations</a></li>
+							  <li><a href="https://www.nta.ac.in/">> National Testing Agency</a></li>
+							  <li><a href="https://www.india.gov.in/">> Government Of India</a></li>
+							  <li><a href="https://scholarships.gov.in/">> National Scholarship Portal</a></li>
+							  <li><a href="https://www.antiragging.in/">> Anti-ragging</a></li>
+							</ul>
+						 </div>
+				 </div>
+				 
+				 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer_blog footer_menu white_fonts">
+						     <h3>MORE</h3>
+                             <ul>
+							 <li><a href="{{url_for('contact')}}">> Contact</a></li>
+                             <li><a href="{{url_for('about')}}">> About</a></li>
+                             <li><a href="{{url_for('library')}}">> Library</a></li>
+                             <li><a href="{{url_for('bl')}}">> bloodbank registration</a></li>
+                             </ul>
+						 </div>
+					</div>	 
+			  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				 <div class="footer_blog full white_fonts">
+						     <h3>Contact us</h3>
+							 <ul class="full">
+							   <li><img src="{{ url_for('static',filename='images/images/i5.png')}}"><span>95, Loni Road,<br>Between Mohan Nagar & Air Force Station-Hindon Ghaziabad (Uttar Pradesh)</span></li>
+							   <li><img src="{{ url_for('static',filename='images/images/i6.png')}}"><span>pas@internationalcollege.ac.in</span></li>
+							   <li><img src="{{ url_for('static',filename='images/images/i7.png')}}"><span>+91586954775</span></li>
+							 </ul>
+						 </div>
+					</div>	 
+			  
+		   </div>
+		
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">Copyright © 2023 P.A.S International College of Science and Technology.All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{{ url_for('static',filename='jquery.min.js')}}"></script>
+	<script src="{{ url_for('static',filename='popper.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{{ url_for('static',filename='jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='jquery.pogo-slider.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='slider-index.js')}}"></script>
+    <script src="{{ url_for('static',filename='smoothscroll.js')}}"></script>
+    <script src="{{ url_for('static',filename='form-validator.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='contact-form-script.js')}}"></script>
+    <script src="{{ url_for('static',filename='isotope.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='images-loded.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='custom.js')}}"></script>
+</body>
+
+</html>

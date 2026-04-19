@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="static/styleg.css">
+        <link rel="stylesheet" href="static/navb.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+
+        </head>
+    <body>
+        <div class="navbar">
+            <h1>P.A.S INTERNATIONAL COLLEGE</h1>
+            <div>
+              <a href="{{ url_for('index') }}">Home</a>
+              <a href="{{ url_for('about') }}">About</a>
+              <a href="{{ url_for('library') }}">Library</a>
+            </div>
+          </div>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>ADMISSION</h1></u>
+                <form action="{{ url_for('admisionadd') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="fullname" name="fullname" type="text" placeholder="Enter Your Fullname" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="address" name="address" type="text" placeholder="Enter Your Address" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="city" name="city" type="text" placeholder="Ente Your City" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="state" name="state" type="text" placeholder="Ente Your State" class="textbox"/>
+                        </div>
+
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="phonenumber" name="phonenumber" type="text" placeholder="Enter Your Phonenumber" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-lock"></i>
+                            <select id="Course" name="Course" > 
+                                <option value="Course">Course</option>  
+                                <option value="Bsc.computer scice">Bsc.computer science</option>  
+                                <option value="Bsc.physics">Bsc.physics</option>  
+                                <option value="Bsc.chemistry">Bsc.chemistry</option>  
+                                <option value="Bsc.zoology">Bsc.zoology</option>  
+                                <option value="Bsc.botany">Bsc.botany</option>  
+                                <option value="Msc.computer scice">Msc.computer science</option>  
+                                <option value="Msc.physics">Msc.physics</option>  
+                                <option value="Msc.chemistry">Msc.chemistry</option>  
+                                <option value="Msc.zoology">Msc.zoology</option>  
+                                <option value="Msc.botany">Msc.botany</option>
+                            </select>  
+                        </div>
+                        
+  
+                    </div>
+                    
+                    <div class="btnf">
+                        <br><br><button type="submit" class="btn">submit</button></br></br>
+                     </div>
+                  
+                    <br><p class="bottom">Please Fill Up Above Information We Call you</p>
+                </form>
+
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>

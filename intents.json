@@ -1,0 +1,165 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What are the courses in the college?",
+        "Courses?",
+        "What are the pg courses in the college?",
+        "What are the ug courses in the college?"
+      ],
+      "responses": [
+        "bachelor of science - computer science,physics,chemistry,zoology,botany  master of science - physics,chemistry,zoology,botany"
+      ]
+    },
+    {
+      "tag": "seats",
+      "patterns": [
+        "seats?",
+        "how many seats are there in the college?",
+        "how many bsc computer science seats are there in the college?",
+        "how many bsc physics seats are there in the college?",
+        "how many bsc chemistry seats are there in the college?",
+        "how many bsc zoology seats are there in the college?",
+        "how many bsc botony  seats are there in the college?",
+        "how many msc physics seats are there in the college?",
+        "how many msc chemistry seats are there in the college?",
+        "how many msc zoology seats are there in the college?",
+        "how many msc botany seats are there in the college?"
+      ],
+      "responses": [
+        "ba ebglish=20,bachelor of science - computer science,physics,chemistry,zoology,botany =60 seats / master of science - physics,chemistry,zoology,botany =60 seats"
+      ]
+    },
+    {
+      "tag": "syllabus",
+      "patterns": [
+        "syllabus?",
+        "subjects",
+        "bsc computer science syllabus?",
+        "bsc physics syllabus?",
+        "bsc chemistry syllabus?",
+        "bsc zoology syllabus?",
+        "bsc botany syllabus?",
+        "msc physics syllabus?",
+        "msc chemistry syllabus?",
+        "msc zoology syllabus?",
+        "msc botany syllabus?"
+      ],
+      "responses": [
+        "hey:<a href='https://drive.google.com/file/d/12--m_i29G8CLAmoU1MyOuegLStIw5i1T/view?usp=share_link'>clickme</a>"
+      ]
+    },
+    {
+      "tag": "fee",
+      "patterns": [
+        "fee?",
+        "bsc computer science fee?",
+        "bsc physics fee?",
+        "bsc chemistry fee?",
+        "bsc zoology fee?",
+        "bsc botany fee?",
+        "msc physics fee?",
+        "msc chemistry fee?",
+        "msc zoology fee?",
+        "msc botany fee?"
+      ],
+      "responses": [
+        "bachelor of science - computer science,physics,chemistry,zoology,botany =19500$/sem  and master of science - physics,chemistry,zoology,botany =32500$/sem "
+      ]
+    },
+    {
+      "tag": "ba english",
+      "patterns": [
+        "seats available "
+        
+      ],
+      "responses": [
+         "seats available are 20"
+      ]
+    },
+    {
+      "tag": "address",
+      "patterns": [
+        "address?"
+      ],
+      "responses": [
+        "Loni Road, Between Mohan Nagar, Air Force Station-Hindon Ghaziabad (Uttar Pradesh),Pin : 201007,Phone : 0120-2657731/32,Tele-Fax :0120-2898513,Director's Direct Number : 0120-2898513,E-mail : pas@internationalcollege.ac.in, WebSite : http://www.pasinternationalcollege.ac.in "
+      ]
+    },
+    {
+      "tag": "class time",
+      "patterns": [
+        "class time?",
+        "timing"
+      ],
+      "responses": [
+        "9:30 am to 3:30 pm"
+      ]
+    },
+    {
+      "tag": "office time",
+      "patterns": [
+        "office time?",
+        "time"
+      ],
+      "responses": [
+        "9:30 am to 5 pm"
+      ]
+    },
+    {
+      "tag": "Admission",
+      "patterns": [
+        "admission?",
+        "when will the admission start?",
+        "when will the admission end?"
+      ],
+      "responses": [
+        "admission will start from october 2 till november 23"
+      ]
+    }
+  ]
+}

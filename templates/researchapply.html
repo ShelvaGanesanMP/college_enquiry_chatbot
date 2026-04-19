@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>researchapply</title>
+        <link rel="stylesheet" href="static/styleg.css">
+        <link rel="stylesheet" href="static/navb.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>P.A.S INTERNATIONAL COLLEGE</h1>
+            <div>
+              <a href="{{ url_for('index') }}">Home</a>
+              <a href="{{ url_for('about') }}">About</a>
+              <a href="{{ url_for('library') }}">Library</a>
+            </div>
+          </div>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>APPLY</h1></u>
+                <form action="{{ url_for('researchapply') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="fullname" name="fullname" type="text" placeholder="Enter Your fullname" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="address" name="address" type="text" placeholder="Enter Your address" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="phonenumber" name="phonenumber" type="text" placeholder="Enter Your phonenumber" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-lock"></i>
+                            <select id="subject" name="subject" > 
+                                <option value="subject">subject</option>  
+                                <option value="computer scice">computer science</option>  
+                                <option value="physics">physics</option>  
+                                <option value="chemistry">chemistry</option>  
+                                <option value="zoology">zoology</option>  
+                                <option value="botany">botany</option>  
+                            </select>  
+                        </div>
+                    </div>
+                    <div class="btnf">
+                       <br><br><button type="submit" class="btn">APPLY</button></br></br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

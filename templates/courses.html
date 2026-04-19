@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>COURSES</title>
+        <link rel="stylesheet" href="static/styleg.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>COURSES</h1></u>
+                <form action="{{ url_for('courses') }}" method="post">
+                    <div class="ipg">
+                    <h2>UG COURSES</h2><br>
+                    <h3>Bsc.computer science</h3>
+                    <h3>Bsc.physics</h3> 
+                    <h3>Bsc.chemistry</h3> 
+                    <h3>Bsc.botany</h3><br>  
+                    <h2>PG COURSES</h2><br>
+                    <h3>Msc.computer science</h3>
+                    <h3>Msc.physics</h3> 
+                    <h3>Msc.chemistry</h3> 
+                    <h3>Msc.botany</h3><br><br>    
+                    </div>
+                    <div class="btnf">
+                       <br><br><a button type="submit" class="btn" href="{{url_for('admission')}}">APPLY</button></a></br></br>
+                    </div>
+                </form>
+
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>

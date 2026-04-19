@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>MySQL Data</title>
+        <style>
+      table {
+        border-collapse: collapse;
+        width: 90%;
+        font-family: Arial, sans-serif;
+      }
+
+      th, td {
+        text-align: left;
+        padding: 8px;
+        width: 33.33%;
+      }
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+        <body >
+          <center>
+            <p><h2><b><u>DETAILS</u></b></h2></p>
+            <br><br><br>
+            <table>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+            {% for row in data %}
+            <tr>
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+              <td>{{ row[2] }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+          </center>
+        </body>
+      </html>
