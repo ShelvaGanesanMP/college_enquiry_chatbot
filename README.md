@@ -118,7 +118,7 @@ http://127.0.0.1:5000/
 ---
 
 ## 📁 Project Structure
-
+```
 college_enquiry_chatbot/
 │
 ├── main.py              # Flask app
@@ -132,9 +132,8 @@ college_enquiry_chatbot/
 ├── templates/           # HTML pages
 ├── static/              # CSS, JS, images
 │
-├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## ⚠️ Important Notes
